@@ -1,0 +1,99 @@
+:root {
+  background-color: #ebffd5;
+}
+
+.container {
+  padding: 40px;
+
+  height: 500px;
+
+  width: 400px;
+}
+
+.c-calendar-container {
+  border: 1px solid white;
+
+  background-color: white;
+
+  border-radius: 10px;
+
+  height: 100%;
+
+  width: 100%;
+
+  display: inline-block;
+
+  box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.41);
+  -webkit-box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.41);
+
+  .c-calendar-header {
+    height: 10%;
+
+    display: flex;
+
+    padding: 10px 20px;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    font-weight: 400;
+
+    border-bottom: 1px solid #e9e9e9;
+
+    .title {
+      cursor: pointer;
+    }
+
+    .button {
+      cursor: pointer;
+    }
+  }
+
+  .c-calendar-body {
+    $primary-color: #ff3232;
+    // $day-item-hover-border-color: #31d912;
+
+    padding: 20px 20px;
+
+    .c-calendar-container-table {
+      width: 100%;
+
+      .day-name-item {
+        padding: 10px 0;
+      }
+
+      .day-item {
+        width: 13%;
+        height: 55px;
+
+        .background-box {
+          height: 90%;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          cursor: pointer;
+
+          border-radius: 10px;
+
+          &:hover {
+            border: 1px solid $primary-color;
+
+            color: $primary-color;
+          }
+        }
+      }
+
+      .day-name-item:nth-child(1) {
+        color: $primary-color;
+      }
+
+      .day-item:nth-child(1) {
+        color: $primary-color;
+      }
+    }
+  }
+}
